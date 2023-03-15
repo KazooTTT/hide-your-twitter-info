@@ -7,5 +7,4 @@ install:https://greasyfork.org/scripts/461892-hide-your-twitter-info
 before:
 ![](https://kazoottt-1256684243.cos.ap-chengdu.myqcloud.com/202303152209393.png)
 after:
-![](https://kazoottt-1256684243.cos.ap-chengdu.myqcloud.com/202303152209246.png)
-
+![](https://kazoottt-1256684243.cos.ap-chengdu.myqcloud.com/202303152238044.png)
