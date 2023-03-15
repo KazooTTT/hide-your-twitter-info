@@ -9,19 +9,31 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-  'use strict';
-  const accountEl = document.querySelector(
-      'a[data-testid="AppTabBar_Profile_Link"]'
-  );
-
+const insertStylesBySelector = (selector) => {
   const style = document.createElement("style");
   style.textContent = `
-div[data-testid="SideNav_AccountSwitcher_Button"]{
+${selector} {
 display:none
 }
 `;
   const head = document.querySelector("head");
   head.append(style);
-})();
+};
 
+(function () {
+  "use strict";
+  insertStylesBySelector(`div[data-testid="SideNav_AccountSwitcher_Button"]`);
+
+  const timer = setInterval(() => {
+    const accountEl = document.querySelector(
+      'a[data-testid="AppTabBar_Profile_Link"]'
+    );
+    if (accountEl) {
+      const accountId = accountEl.href.split("/").pop();
+      insertStylesBySelector(
+        `div[data-testid="UserAvatar-Container-${accountId}"]`
+      );
+      clearInterval(timer);
+    }
+  }, 1500);
+})();
