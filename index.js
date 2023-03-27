@@ -2,10 +2,11 @@
 // @name         Hide your twitter info
 // @namespace    https://github.com/KazooTTT/hide-your-twitter-info
 // @version      0.1
-// @description  Hide your Twitter information. Prevent others from seeing your ID, nickname, and profile picture in public places. (https://github.com/KazooTTT/hide-your-twitter-info/blob/master/index.js)
+// @description  Hide your Twitter information. Prevent others from seeing your ID, nickname, and profile picture in public places.
 // @author       KazooTTT
 // @match        https://*.twitter.com/*
 // @icon         https://github.com/kazoottt.png
+// @license      MIT
 // @grant        none
 // ==/UserScript==
 
