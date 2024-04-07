@@ -23,7 +23,8 @@ display:none
 
 (function () {
   "use strict";
-  insertStylesBySelector(`div[data-testid="SideNav_AccountSwitcher_Button"]`);
+  insertStylesBySelector(`div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(1)`);
+  insertStylesBySelector(`div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(2)`);
 
   const timer = setInterval(() => {
     const accountEl = document.querySelector(
